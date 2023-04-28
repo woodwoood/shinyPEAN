@@ -1,0 +1,49 @@
+
+## Introduction
+In recent years, a large number of studies have found that enhancers, 
+as important regulatory elements, play an important role in gene expression 
+and the occurrence of complex traits. At present, the study of pig enhancers 
+is still in infancy. Therefore, we collected published pig ChIP-seq data from 
+different breeds and different tissues, and identified a number of enhancer 
+by H3K27ac and H3K4me3.
+<br>
+
+## Data Source
+The ChIP-seq data came from  GEO database, and its accession is GSE158430, GSE143288, 
+GSE153451 and GSE178380, and it involved 18 tissues and cells, including adipose, 
+cerebellum, cerebral cortex, hypothalamus, liver, lung, skeletal muscle, spleen, 
+cerebrum, duodenum, fat, heart, kidney, muscle, thymus, pancreas, pig embryonic 
+fibroblasts, pituitary gland.
+<br>
+
+## Identification Method
+The enriched regions for H3K27ac overlapped with neither the extended regions (2.5 kb upstream 
+and 1 kb downstream) of a gene transcription start site (TSS), nor the enriched regions of 
+H3K4me3 were finally defined as putative enhancers.
+<br>
+
+## Application Usage
+shinyPEAN can be interactively searched and browsed in various ways. Users can search for enhancers 
+in a genomic region, upstream/downstream gene, or by conditions such as source, cell type/tissue. 
+The results, including genomic coordinates, GC content, cell type/tissues, and sources, are organized 
+and returned in a tabular format. In addition, users can query detailed enhancer annotation messages 
+on a new web page, including its related traits and QTN (GWAS) within putative enhancer. All results 
+can be downloaded for further analysis.
+<br>
+
+## Package Dependencies 
+```
+	shiny,
+	shinythemes,
+	bslib,
+	data.table,
+	shinycssloaders,
+	DT,
+	rmarkdown,
+	markdown,
+	shinyBS,
+	rintrojs,
+	shinyjs
+```
+The source code for this Shiny app is available on GitHub at https://github.com/woodwoood/shinyPEAN.
+<br>
